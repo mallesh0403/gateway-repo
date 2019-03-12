@@ -21,7 +21,7 @@ define Package/healthmonitor
 	SECTION:=utils
 	CATEGORY:=Utilities
 	TITLE:=read configdata&opcommands from individual files..!
-	DEPENDS:=+libconfig
+	
 endef
 # Package description; a more verbose description on what our package does
 define Package/healthmonitor/description
@@ -50,5 +50,5 @@ define Package/healthmonitor/install
 endef
 
 # This command is always the last, it uses the definitions and variables we give above in order to get the job done
-$(eval $(call BuildPackage,healthmonitor,+libconfig))
+$(eval $(call BuildPackage,healthmonitor))
 
